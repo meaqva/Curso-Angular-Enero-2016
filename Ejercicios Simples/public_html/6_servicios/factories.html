@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo de uso del servicio $http'</title>
+        <script src="../frameworks/angular/angular.1.4.8.min.js"></script>
+        <script src="../frameworks/jquery/jquery-2.1.4.min.js"></script>
+        <script src="factories.js"></script>
+    </head>
+
+    <body>
+        <!-- Esta es nuestra template -->
+        <div ng-app="app">
+            <div ng-controller="MyController">
+                <input type="text" ng-model="city" placeholder="Ciudad de la que quieres consultar la velocidad del viento" />
+                <button ng-click="whatWeatherIs()">Consultar</button>
+                
+                {{weather}}
+                
+            </div>
+        </div>
+    </body>
+</html>

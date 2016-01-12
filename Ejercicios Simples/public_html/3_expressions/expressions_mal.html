@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Expresiones</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+    </head>
+
+    <body>
+        <div ng-init="precio=15;iva=21">
+            <div>
+                Las expresiones pueden contener... <br />
+                
+                <ol>
+                    <li>
+                        Literales<br />
+                        <div style="margin-left: 25px">
+                            {{ 'Hola caracola' }}
+                        </div>
+                    </li>
+                    
+                    <li>
+                        Operadores<br />
+                        <div style="margin-left: 25px">
+                            5 * 5 = {{ 5 * 5 }}
+                        </div>
+                    </li>
+                    
+                    <li>
+                        Variables<br />
+                        <div style="margin-left: 25px">
+                            Si el precio es {{precio}} y el IVA es del {{iva}} al final pagar&eacute; {{ precio * (1+(iva/100))}}
+                        </div>
+                    </li>
+                </ol>
+                
+            </div>
+        </div>
+    </body>
+</html>

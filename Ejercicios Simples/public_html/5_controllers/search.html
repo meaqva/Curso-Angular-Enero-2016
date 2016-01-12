@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo de controlador 'real'</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="search.js"></script>
+    </head>
+
+    <body>
+        <!-- Esta es nuestra template -->
+        <div ng-app="app">
+            <div ng-controller="MyController">
+                <div>
+                    <input type='search' ng-model="searchTerm" placeholder="Busca por nombre" />
+                    <button ng-click="search()">Buscar</button>
+                </div>
+                
+                {{ champs }}
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo 2</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+
+    <body>
+        <div ng-app="app" ng-controller="DoubleDataBindingController">
+            <input ng-model="who" placeholder="Dime tu nombre" />
+
+            <hr />
+
+            <h1> Hello {{who}} </h1>
+            <h2 ng-bind="who"></h2>
+        </div>
+    </body>
+</html>

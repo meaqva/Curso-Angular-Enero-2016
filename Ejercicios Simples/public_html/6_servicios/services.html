@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Servicio chorra</title>
+        <script src="../frameworks/angular/angular.1.4.8.min.js"></script>
+        <script src="../frameworks/jquery/jquery-2.1.4.min.js"></script>
+        <script src="../frameworks/sweetalert/sweetalert.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="../frameworks/sweetalert/sweetalert.css"/>
+        <script src="services.js"></script>
+    </head>
+
+    <body>
+        <!-- Esta es nuestra template -->
+        <div ng-app="app">
+            <div ng-controller="ControllerQueUsaServices">
+                <input type="text" ng-model="mensaje" placeholder="Que mensaje quieres mostrar" />
+                <button ng-click="alerta()" type="button">En modo alerta</button>
+                <button ng-click="ok()" type="button">En modo ok</button>
+                
+            </div>
+        </div>
+    </body>
+</html>

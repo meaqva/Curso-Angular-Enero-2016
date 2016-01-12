@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AngularJS from scratch</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="HelloWorldApp" ng-controller="HelloWorldController">
+            <h1> Hello {{who}} </h1>
+        </div>
+
+        <script>
+            var HWApp = angular.module('HelloWorldApp', []);
+
+            HWApp.controller('HelloWorldController', function ($scope) {
+                    $scope.who = 'Darth Vader!';
+                }
+            );
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo de uso del servicio $http'</title>
+        <script src="../frameworks/angular/angular.1.4.8.min.js"></script>
+        <script src="../frameworks/jquery/jquery-2.1.4.min.js"></script>
+        <script src="http.js"></script>
+    </head>
+
+    <body>
+        <!-- Esta es nuestra template -->
+        <div ng-app="app">
+            <div ng-controller="MyController">
+                <table>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Ciudad</th>
+                        <th>Pa&iacute;s</th>
+                    </tr>
+                    
+                    <tr ng-repeat="x in records">
+                        <td>{{x.Name}}</td>
+                        <td>{{x.City}}</td>
+                        <td>{{x.Country}}</td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+    </body>
+</html>
